@@ -17,10 +17,8 @@ export type ChakraTagInputProps = InputProps & {
   onTagsChange?(event: SyntheticEvent, tags: string[]): void
   onTagAdd?(event: SyntheticEvent, value: string): void
   onTagRemove?(event: SyntheticEvent, index: number): void
-
   vertical?: boolean
   addKeys?: string[]
-
   wrapProps?: WrapProps,
   wrapItemProps?: WrapItemProps,
   tagProps?: TagProps
