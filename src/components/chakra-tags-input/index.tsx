@@ -26,7 +26,7 @@ export type ChakraTagInputProps = InputProps & {
   tagCloseButtonProps?: TagCloseButtonProps
 }
 
-export default forwardRef(function ChakraTagInput({
+export const ChakraTagsInput =  forwardRef(function ChakraTagInput({
   tags = [],
   onTagsChange,
   onTagAdd,
