@@ -26,7 +26,7 @@ export type ChakraTagInputProps = InputProps & {
   tagCloseButtonProps?: TagCloseButtonProps
 }
 
-export const ChakraTagsInput =  forwardRef(function ChakraTagInput({
+export const ChakraTagsInput = forwardRef(function ChakraTagInput({
   tags = [],
   onTagsChange,
   onTagAdd,
@@ -90,7 +90,7 @@ export const ChakraTagsInput =  forwardRef(function ChakraTagInput({
   return (
     <Wrap align="center" {...wrapProps}>
       {tags.map((tag, index) => (
-        <WrapItem key={index}>
+        <WrapItem key={index} {...maybeCall(wrapItemProps, false, index)}>
           <ChakraTagInputTag
             onRemove={handleRemoveTag(index)}
             tagLabelProps={maybeCall(tagLabelProps, tag, index)}
@@ -103,7 +103,7 @@ export const ChakraTagsInput =  forwardRef(function ChakraTagInput({
           </ChakraTagInputTag>
         </WrapItem>
       ))}
-      <WrapItem flexGrow={1}>
+      <WrapItem flexGrow={1} { ...maybeCall(wrapItemProps, true, tags.length) }>
         <Input {...props} onKeyDown={handleKeyDown} ref={ref}/>
       </WrapItem>
     </Wrap>
