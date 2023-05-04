@@ -38,7 +38,13 @@
     "trailingComma": "es5"
   },
   "name": "chakra-tags-input",
-  "author": "Deepak Kumar Swami",
+  "description": "a dynamic tags input component for chakra ui",
+  "author": "Deepak Kumar Swami <dkswami1820@gmail.com> (http://www.dkswami.tech)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkswami/chakra-tags-input"
+  },
+  "homepage": "https://github.com/dkswami/chakra-tags-input",
   "module": "dist/chakra-tags-input.esm.js",
   "size-limit": [
     {
