@@ -5,9 +5,7 @@ That renders respective tags and and provides an easy interface for removing and
 
 ## Commands
 
-TSDX scaffolds your new library inside `/src`, and also sets up a [Parcel-based](https://parceljs.org) playground for it inside `/example`.
-
-The recommended workflow is to run TSDX in one terminal:
+To install follow these commands :
 
 ```bash
 npm i chakra-tags-input
@@ -18,13 +16,14 @@ yarn add chakra-tags-input
 
 Here is a simple working react Functional Component for this package :
 
-```bash
+```jsx
+import { SyntheticEvent } from 'react';
 import { ChakraTagsInput } from "chakra-tags-input";
 
 const TestComponent = () => {
 	const [tags, setTags] = useState<string[]>(['test1', 'test2']);
 
-	const handleTagsChange = (event: SyntheticEvent, tags: string[]) => {
+	const handleTagsChange = (event: SyntheticEvent, tags: string[]) =>{
     setTags(tags)
   };
 	return(
@@ -35,3 +34,11 @@ const TestComponent = () => {
 	)
 }
 ```
+
+## Demo with all options applied
+
+### [Check it out in this Sandbox](https://codesandbox.io/s/chakra-tags-input-p8bhuz?file=/src/App.tsx)
+
+<br />
+
+
