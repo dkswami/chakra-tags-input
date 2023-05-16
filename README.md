@@ -16,6 +16,8 @@ yarn add chakra-tags-input
 
 Here is a simple working react Functional Component for this package :
 
+![](.images/demo-tags-input.gif)
+
 ```jsx
 import { SyntheticEvent } from 'react';
 import { ChakraTagsInput } from "chakra-tags-input";
@@ -23,14 +25,18 @@ import { ChakraTagsInput } from "chakra-tags-input";
 const TestComponent = () => {
 	const [tags, setTags] = useState<string[]>(['test1', 'test2']);
 
-	const handleTagsChange = (event: SyntheticEvent, tags: string[]) =>{
+	const handleTagsChange = (
+		event: SyntheticEvent,
+		tags: string[]
+		) =>{
     setTags(tags)
   };
+
 	return(
 		<ChakraTagsInput
-            tags={tags}
-            onTagsChange={handleTagsChange}
-          />
+        tags={tags}
+        onTagsChange={handleTagsChange}
+      />
 	)
 }
 ```

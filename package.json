@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -47,15 +47,12 @@
   "homepage": "https://github.com/dkswami/chakra-tags-input",
   "keywords": [
     "chakra-ui",
+		"chakra-tags-input",
     "tags",
     "input",
-    "react",
-    "typescript",
     "chakra ui tags",
     "input with tags",
-    "react tags input",
-    "react tags",
-    "react tags input component",
+    "chakra tags input",
     "react tags input component for chakra ui"
   ],
   "module": "dist/chakra-tags-input.esm.js",
